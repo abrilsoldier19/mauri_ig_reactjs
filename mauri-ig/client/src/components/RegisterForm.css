@@ -1,0 +1,120 @@
+.sign-in-container {
+  background: linear-gradient( #335fcfc2, #335fcfc2, #335fcf38);
+  color: white;
+  border-radius: 10px;
+  width: 90%; /* Ancho relativo */
+  max-width: 500px; /* Tamaño máximo */
+  padding: 5vw; /* Utilizando un valor relativo al ancho de la ventana */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  margin-top: 50px;
+  
+}
+
+.sign-in-wrapper {
+  display: flex;
+  background-image: url('/art.jpg'); 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto asegura que el contenedor esté centrado verticalmente en la ventana */
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.sesion-text {
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.sign-in-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sign-in-container span {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.sign-in-container input[type="email"],
+.sign-in-container input[type="text"],
+.sign-in-container input[type="password"],
+.sign-in-container button {
+  width: 100%; /* Ancho relativo al contenedor */
+  height: 50px; /* Altura fija */
+  padding: 10px; /* Padding fijo */
+  margin-top: 10px; /* Espaciado entre elementos */
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.sign-in-container input[type="email"],
+.sign-in-container input[type="text"],
+.sign-in-container input[type="password"] {
+  background-color: #c9d4e66e;
+  color: rgb(0, 0, 0);
+}
+
+.sign-in-container input[type="email"]::placeholder,
+.sign-in-container input[type="text"]::placeholder,
+.sign-in-container input[type="password"]::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.sign-in-container button {
+  background-color: #02d8b1;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00fffb;
+}
+
+.sign-in-container button:hover {
+  background-color: #4ca8af;
+}
+
+.sign-in-container a {
+  color: #ffffff;
+}
+
+.sign-in-container a:hover {
+  text-decoration: underline;
+  color: #080404;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vw; /* Utilizando un valor relativo al ancho de la ventana */
+}
+
+.social-container .social {
+  background-color: #007bff;
+  color: white;
+  width: 10vw; /* Ancho relativo */
+  height: 10vw; /* Altura relativa */
+  max-width: 40px; /* Estableciendo un tamaño máximo */
+  max-height: 40px; /* Estableciendo un tamaño máximo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-container .social:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+  .sign-in-container {
+    width: 90%;
+    max-width: none;
+  }
+}
