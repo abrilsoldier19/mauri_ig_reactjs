@@ -1,0 +1,12 @@
+.dropdown-items-container {
+    display: flex; /* Mostrar los elementos en línea */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    background-color: lightgray; /* Color de fondo del contenedor */
+    padding: 10px; /* Añadir relleno al contenedor */
+    border-radius: 10px; /* Agregar bordes redondeados al contenedor */
+  }
+  
+  .dropdown-items-container > * {
+    margin-bottom: 5px; /* Espacio entre los elementos */
+  }
+  
