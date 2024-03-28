@@ -1,0 +1,104 @@
+.sign-in-wrapper {
+  display: flex;
+  background-image: url('/art.jpg'); 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto asegura que el contenedor esté centrado verticalmente en la ventana */
+}
+.start-bg {
+  margin: 0;
+  padding: 0;
+  background-image: url('/art.jpg') no-repeat center fixed;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.sign-in-container {
+  background-color: #335ECF;
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* El resto de tus estilos permanecen igual */
+
+
+.sign-in-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sign-in-container span {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.sign-in-container input[type="email"],
+.sign-in-container input[type="password"],
+.sign-in-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.sign-in-container input[type="email"],
+.sign-in-container input[type="password"] {
+  background-color: #464d59;
+  color: white;
+}
+
+.sign-in-container input[type="email"]::placeholder,
+.sign-in-container input[type="password"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sign-in-container button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-in-container button:hover {
+  background-color: #45a049;
+}
+
+.sign-in-container a {
+  color: #61dafb;
+}
+
+.sign-in-container a:hover {
+  text-decoration: underline;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.social-container .social {
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-container .social:hover {
+  background-color: #0056b3;
+}
